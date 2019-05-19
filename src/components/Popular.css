@@ -1,0 +1,37 @@
+.languages {
+  display: flex;
+  justify-content: center;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+
+.languages li {
+  margin: 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.All {
+  color: red;
+}
+
+.Ruby {
+  color: red;
+}
+
+.Java {
+  color: red;
+}
+.Python {
+  color: red;
+}
+.CSS {
+  color: red;
+}
+.JavaScript {
+  color: red;
+}

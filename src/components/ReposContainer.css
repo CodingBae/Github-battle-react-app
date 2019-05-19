@@ -1,0 +1,23 @@
+.popular-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.popular-item {
+  margin: 20px;
+  text-align: center;
+}
+
+.popular-pos {
+  font-size: 2rem;
+}
+
+.space-list-item {
+  margin: 10px;
+}
+
+.avatar img {
+  width: 150px;
+  border-radius: 50%;
+}
