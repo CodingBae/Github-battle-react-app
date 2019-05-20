@@ -4,6 +4,7 @@ import Popular from "./Popular";
 import Home from "./Home";
 import Nav from "./Nav";
 import Battle from "./Battle";
+import Results from "./Results";
 import "./App.css";
 
 var Router = BrowserRouter;
@@ -14,6 +15,7 @@ function App() {
         <Nav />
         <Route exact path="/" component={Home} />
         <Route exact path="/battle" component={Battle} />
+        <Route path="/battle/results" component={Results} />
         <Route exact path="/popular" component={Popular} />
       </div>
     </Router>
