@@ -1,0 +1,44 @@
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+}
+
+.column input {
+  border-radius: 4px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  padding: 6px;
+  width: 80%;
+  border: 1px solid rgba(17, 17, 17, 0.699);
+}
+
+.column label {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.reset {
+  border: none;
+  background: transparent;
+  color: darkred;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.reset:hover {
+  cursor: pointer;
+}
