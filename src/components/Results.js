@@ -3,6 +3,8 @@ import queryString from "query-string";
 import api from "../utils/api";
 import { Link } from "react-router-dom";
 import PlayerPreview from "./PlayerPreview";
+import Loading from "./Loading";
+import "./Results.css";
 
 function Profile(props) {
   var info = props.info;
@@ -27,7 +29,7 @@ function Profile(props) {
 
 function Player(props) {
   return (
-    <div>
+    <div className="column">
       <h1 className="header">{props.label}</h1>
       <h3>Score:{props.score}</h3>
       <Profile info={props.profile} />
@@ -72,7 +74,7 @@ class Results extends React.Component {
     var loading = this.state.loading;
 
     if (loading === true) {
-      return <h1>LOADING......</h1>;
+      return <Loading />;
     }
 
     if (error) {

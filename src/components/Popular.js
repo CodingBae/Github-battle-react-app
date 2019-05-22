@@ -3,6 +3,7 @@ import "./Popular.css";
 import Languages from "./Languages";
 import api from "../utils/api";
 import ReposContainer from "./ReposContainer";
+import Loading from "./Loading";
 
 class Popular extends React.Component {
   constructor(props) {
@@ -40,7 +41,7 @@ class Popular extends React.Component {
           updateLanguage={this.updateLanguage}
         />
         {!this.state.repos ? (
-          <p>Loading</p>
+          <Loading />
         ) : (
           <ReposContainer repos={this.state.repos} />
         )}

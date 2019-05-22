@@ -37,7 +37,7 @@ class PlayerInput extends React.Component {
           onChange={this.handleChange}
         />
         <button
-          className="button"
+          className="Battle-button"
           type="submit"
           disabled={!this.state.username}
         >
@@ -96,7 +96,7 @@ class Battle extends React.Component {
           {playerOneImage !== null && (
             <PlayerPreview avatar={playerOneImage} username={playerOneName}>
               <button
-                className="reset"
+                className="Battle-reset"
                 onClick={this.handleReset.bind(null, "playerOne")}
               >
                 Reset
@@ -115,7 +115,7 @@ class Battle extends React.Component {
           {playerTwoImage !== null && (
             <PlayerPreview avatar={playerTwoImage} username={playerTwoName}>
               <button
-                className="reset"
+                className="Battle-reset"
                 onClick={this.handleReset.bind(null, "playerTwo")}
               >
                 Reset
@@ -125,7 +125,7 @@ class Battle extends React.Component {
         </div>
         {playerOneImage && playerTwoImage && (
           <Link
-            className="button"
+            className="Battle-button"
             to={{
               pathname: match.url + "/results",
               search:

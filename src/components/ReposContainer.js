@@ -3,13 +3,13 @@ import "./ReposContainer.css";
 
 const ReposContainer = props => {
   return (
-    <ul className="popular-list">
+    <ul className="Repos-popular-list">
       {props.repos.map((repo, index) => {
         return (
-          <li key={repo.name} className="popular-item">
-            <div className="popular-pos">#{index + 1}</div>
-            <ul className="space-liste-item">
-              <li className="avatar">
+          <li key={repo.name} className="Repos-popular-item">
+            <div className="Repos-popular-pos">#{index + 1}</div>
+            <ul className="Repos-space-liste-item">
+              <li className="Repos-avatar">
                 <img src={repo.owner.avatar_url} alt="awesome repo" />
               </li>
               <li>

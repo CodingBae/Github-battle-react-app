@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./PlayerPreview.css";
 function PlayerPreview(props) {
   return (
     <div>

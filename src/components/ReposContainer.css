@@ -1,23 +1,25 @@
-.popular-list {
+.Repos-popular-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.popular-item {
+.Repos-popular-item {
   margin: 20px;
   text-align: center;
+  background-color: rgba(52, 131, 195, 0.527);
+  padding: 1rem 0;
+  width: 340px;
+  border-radius: 2rem;
 }
 
-.popular-pos {
+.Repos-popular-pos {
+  margin: 1rem;
   font-size: 2rem;
+  color: darkred;
 }
 
-.space-list-item {
-  margin: 10px;
-}
-
-.avatar img {
+.Repos-avatar img {
   width: 150px;
   border-radius: 50%;
 }
